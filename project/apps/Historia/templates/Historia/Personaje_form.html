@@ -1,0 +1,28 @@
+{% extends 'Home/index_home.html' %}
+
+{% block CONTENIDO %}
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="cta-inner bg-faded text-center rounded">
+                        <h2 class="section-heading mb-5">
+                            <span class="section-heading-upper">Personaje Nuevo</span>
+                            <span class="section-heading-lower">Ingresa los datos</span>
+                        </h2>
+                        <form method="post">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <button type="submit">Guardar</button>
+                        </form>
+                        <br>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{% url 'Historia:faccion_create' %}">Crear Facción</a></div>
+                        <br>
+                        <div class="intro-button mx-auto"><a class="btn btn-primary btn-xl" href="{% url 'Home:home' %}">Volver a página principal</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock CONTENIDO %}

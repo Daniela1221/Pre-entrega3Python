@@ -1,0 +1,36 @@
+{% extends 'Home/index_home.html' %}
+
+{% block CONTENIDO %}
+    
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-5">
+                        <span class="section-heading-upper">Personas</span>
+                        <span class="section-heading-lower">Subscritas</span>
+                    </h2>
+                    <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                        {% for subscriptor in Subscriptores %}
+                            <li class="list-unstyled-item list-hours-item d-flex">
+                                {{ subscriptor.nombre }} {{ subscriptor.apellido }}
+                                <span class="ms-auto">{{ subscriptor.correo }}</span>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    <p class="address mb-5">
+                        <em>
+                            <strong>¡No olvides mandar correo a los subscriptores!</strong>
+                            <br />
+                            Que la fuerza te acompañe
+                        </em>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock CONTENIDO %}
+
