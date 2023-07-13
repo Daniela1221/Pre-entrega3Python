@@ -36,7 +36,7 @@ Aquí se entra al administrador de Django, donde se puede añadir información a
 Este proyecto se pasará con link directo de la plataforma de GitHub.
 Para bajar la información del proyecto, copiar el url y escribir en la consola de Visual Studio Code (dentro del directorio deseado):
 
-**`git clone https://github.com/Daniela1221/Clase_21_Pre-entrega3-intento2.git`**
+**`git clone https://github.com/Daniela1221/Pre-entrega3Python.git`**
 
 Este proyecto se encuentra respaldado en su totalidad, con excepción del entorno virtual. Por lo que se debe crear el entrono virtual para poder acceder directamente al proyecto.Ejecute
 
